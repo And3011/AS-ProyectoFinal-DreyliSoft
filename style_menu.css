@@ -1,0 +1,138 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #ddd none repeat scroll 0 0;
+    font-family: "Raleway",Arial,sans-serif;
+}
+a {
+    color: #222;
+    text-decoration: none;
+}
+ul, ol, li {
+    list-style: outside none none;
+}
+header, #central-content {
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+}
+header {
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(59, 89, 151, 1) 0%, rgba(41, 62, 107, 1) 100%) repeat scroll 0 0;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    padding: 0.8em 0 0;
+}
+header h1 {
+    float: left;
+    padding: 0 0 0.2em;
+}
+header h1#logo img {
+    height: 40px;
+    margin-left: 0.5em;
+}
+.control-menu {
+    background-color: transparent;
+    background-position: center center;
+    border: 1px solid #fff;
+    display: block;
+    float: right;
+    height: 40px;
+    margin-right: 1.3em;
+    width: 40px;
+}
+.control-menu a span {
+    display: inline-block;
+    height: 40px;
+    text-indent: -9999px;
+    width: 40px;
+}
+.control-menu .close {
+    background-image: url("img/close-menu.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: none;
+}
+.control-menu .open {
+    background-image: url("img/open-menu.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+ul.nav-items {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease-in-out 0s, background-color 2s ease 0s; /*El menú cambia su altura y su color de fondo mediante una transición suavizada al voover a su estado unicial*/
+}
+
+#navigation:target ul.nav-items {
+    background: #f0f0f0 none repeat scroll 0 0;
+    height: 15.8em;
+    transition: height 0.4s ease-in-out 0s, background-color 0.9s ease 0s; /*El menú cambia su altura y su color de fondo mediante una transición suavizada al abrirse*/
+}
+
+
+/*Al hacer clic sobre el enlace que abre el menú éste desaparece*/
+
+.close { 
+   display:none;
+}
+        
+#navigation:target .open {
+      display: none;
+}
+
+/* Al hacer clic sobre el enlace que abre el menú aparece el enlace .close que previamente estaba oculto*/
+
+#navigation:target .close {
+        display: block;
+}
+  
+/*Estilos menu*/
+
+ul.nav-items li {
+    display: block;
+}
+ul.nav-items a {
+    border-top: 2px dotted #dddbdb;
+    color: #333;
+    display: block;
+    height: 3em;
+    line-height: 3em;
+    margin: 0 1.3em;
+}
+ul.nav-items li:first-child a {
+    border-top: 2px solid transparent;
+}
+ul.nav-items li a span {
+    border-left: 3px solid;
+    height: 3.2em;
+    padding: 0.4em 0.5em;
+}
+#Web-Dev a span {
+    border-color: #ff6633;
+}
+#Mobile a span {
+    border-color: #bda94d;
+}
+#Data a span {
+    border-color: #5887bc;
+}
+#Net-VS a span {
+    border-color: #00a2b7;
+}
+#SharePoint a span {
+    border-color: #639bf2;
+}
+
+
+
+
+
+
+

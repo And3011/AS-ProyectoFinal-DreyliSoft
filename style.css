@@ -1,0 +1,18 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+div#general{
+    margin:auto;
+    margin-top: 50px;
+    width: 900px;
+    height: 800px;
+    background-color: #8E88FC;
+}
+
+div#der{
+    width: 30%;
+    height: 80%;
+    background-color: #fff;
+}

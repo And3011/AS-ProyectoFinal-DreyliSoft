@@ -1,0 +1,24 @@
+
+<?php
+$mysqli = new mysqli("localhost", "my_user", "my_password", "world");
+
+/* verificar la conexión */
+if (mysqli_connect_errno()) {
+    printf("Conexión fallida: %s\n", mysqli_connect_error());
+    exit();
+}
+
+if ($result = $mysqli->query("SELECT Code, Name FROM Country ORDER BY Name")) {
+
+    /* determinar el número de filas del resultado */
+    $row_cnt = $result->num_rows;
+
+    printf("Result set has %d rows.\n", $row_cnt);
+
+    /* cerrar el resultset */
+    $result->close();
+}
+//SELECT COUNT(*) FROM clientes    ******************
+/* cerrar la conexión */
+$mysqli->close();
+?>

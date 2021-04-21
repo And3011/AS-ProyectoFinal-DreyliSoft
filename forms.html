@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Form USDNJ</title> 
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+	<link rel="stylesheet" href="estilos.css">
+	<link href="style_menu.css" rel="stylesheet" type="text/css" />	
+
+</head>  
+<body>
+	
+	<header>
+	<h1 id="logo"><img src="img/logo2.png" /></h1>
+
+	<nav id="navigation">
+
+            <div class="control-menu">
+                <a href="#navigation" class="open"><span>MENU</span></a>
+                <a href="#" class="close"><span>CERRAR</span></a>
+
+            </div>
+
+		
+		<ul class="nav-items">
+       
+			<li id="Web-Dev"><a href="index.html"> <span>Home</span></a></li>
+            <li id="Mobile"><a href="objetive.html"><span>Petition</span></a></li>
+            <li id="Data"><a href="forms.html"><span>Support</span></a></li>
+		</ul>
+
+	</nav>
+</header>
+	
+ <form class="formulario" action="conexion.php" method="post">
+    
+    <h1>Support us!</h1>
+     <div class="contenedor">
+     
+     <div class="input-contenedor">
+         <i class="fas fa-user icon"></i>
+         <input type="text" placeholder="First name" name="nombre" required>
+         
+         </div>
+         
+         <div class="input-contenedor">
+         <i class="fas fa-user icon"></i>
+         <input type="text" placeholder="Last Name" name="apellido" required>
+         
+         </div>
+         
+         <div class="input-contenedor">
+        <i class="fas fa-mobile-alt icon"></i>
+         <input type="text" placeholder="Phone number" name="telefono" required>
+         
+         </div>
+									
+									<div class="input-contenedor">
+        <i class="fas fa-envelope-open-text icon"></i>
+         <input type="text" placeholder="E-mail" name="email" required>
+         
+         </div>
+									
+									<div class="input-contenedor">
+        <i class="fas fa-handshake icon"></i>
+         <input type="text" placeholder="Promotional Code Uber" name="codigoUber" required>
+         
+         </div>
+									
+									<div class="input-contenedor">
+        <i class="fas fa-handshake icon"></i>
+         <input type="text" placeholder="Promotional Code Lyft" name="codigoLyft" required>
+         
+         </div>
+									
+									<div class="input-contenedor">
+        <i class="fas fa-fingerprint icon"></i>
+         <input type="text" placeholder="Signature Full Name" name="firma" required>
+         
+         </div>
+         <input type="submit" value="Submit" class="button">
+									<br><br>
+         <p>By registering, you accept our <a href="" style="color: #2F00DB;"><u>Terms of Use</u></u></a> and <a href="" style="color: #2F00DB;"><u>Privacy Policy.</u></a></p>
+									<br>
+     </div>
+    </form>
+	
+		 <footer>
+        <div class='pie'>
+            <br>
+			<p>Email: info@unitedstatedrivenj.es</p>
+			<p><i class="fab fa-facebook-f icon"></i>&nbsp<i class="fab fa-instagram icon"></i>&nbsp<i class="fab fa-twitter icon"></i></p>			
+        </div>
+		<p>DreyliSoft®</p>
+		<br>
+    </footer>
+</body>
+</html>
